@@ -78,6 +78,7 @@ const ModifyPdf = ({ pdfBytes }) => {
       <h4>Enter y: <input className="inps" type='number' value={ydist} onChange={(e)=>setYdist(e.target.value)}/></h4>
       <p>For eg: x = 300 , y = 100 for Top-Center</p>
       <h4>Enter Font size: <input value={fontChange} className="inps" type='number' onChange={(e)=>setFontChange(e.target.value)}/></h4>
+      <span className="span-note">By default font : Times New Roman Bold</span>
       <button className='modify-btn' onClick={handleModifyPdf}>UPDATE PDF</button>
     </div>
   );
