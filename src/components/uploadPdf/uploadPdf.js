@@ -53,22 +53,22 @@ const PdfUploader = ({ onPdfUpload }) => {
   const renderGridMarkers = () => {
     const markers = [];
     for (let i = 0; i <= 700; i += 100) { 
-    //   markers.push(
-    //     <div
-    //       key={`marker-${i}`}
-    //       style={{
-    //         position: 'absolute',
-    //         top: '0',
-    //         left: `${i}px`,
-    //         height: '10px',
-    //         width: '2px', // Make the marker slightly wider for visibility
-    //         backgroundColor: 'lightgray',
-    //         pointerEvents: 'none',
-    //         marginTop:'50px',
+      // markers.push(
+      //   <div
+      //     key={`marker-${i}`}
+      //     style={{
+      //       position: 'absolute',
+      //       top: '0',
+      //       left: `${i}px`,
+      //       height: '10px',
+      //       width: '2px', // Make the marker slightly wider for visibility
+      //       backgroundColor: 'lightgray',
+      //       pointerEvents: 'none',
+      //       marginTop:'50px',
             
-    //       }}
-    //     />
-    //   );
+      //     }}
+      //   />
+      // );
 
       // Adding Labels
       markers.push(
@@ -133,7 +133,7 @@ const PdfUploader = ({ onPdfUpload }) => {
       />
       {/* Grid markers */}
       <div style={{ position: 'absolute', top: 0, left: 0, height: '500px', width: '800px' }}>
-        {renderGridMarkers()}
+        {renderGridMarkers() }
       </div>
     </div>
     </div>
