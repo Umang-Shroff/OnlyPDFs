@@ -1,25 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { useState} from 'react';
+import ModifyPdf from './components/modifyPdf/modifyPdf';
+import PdfUploader from './components/uploadPdf/uploadPdf';
+import ImageToPdfUploader from './components/ImgToPdf/ImgConverter';
 
-function App() {
+const App = () => {
+  const [activeComponent, setActiveComponent] = useState('A');
+  const [pdfBytes, setPdfBytes] = useState(null);
+  const handleComponentChange = (component) => {
+    setActiveComponent(component);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* Navbar */}
+      <nav style={{ position: 'sticky', top: 0, backgroundColor: '#fff', paddingLeft: '0px',width:'100vw',height:'70px',zIndex:'100', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)' }}>
+        <button className="nav-btn" onClick={() => handleComponentChange('A')}>Edit PDF</button>
+        <button className="nav-btn" onClick={() => handleComponentChange('B')}>Image to PDF</button>
+      </nav>
+
+      {/* Component Rendering */}
+      <div style={{ marginTop: '20px' }}>
+        {activeComponent === 'A' && <PdfUploader onPdfUpload={setPdfBytes}/> }
+        {/* && pdfBytes && <ModifyPdf pdfBytes={pdfBytes}/>} */}
+        {pdfBytes && <ModifyPdf pdfBytes={pdfBytes} />}
+        {activeComponent === 'B' && <ImageToPdfUploader/>}
+      </div>
     </div>
   );
-}
+};
 
 export default App;

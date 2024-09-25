@@ -1,0 +1,41 @@
+.inp-div{
+    opacity:0.85;
+    border-radius:16px;
+    padding:10px;
+    text-align:center;
+    width:800px;
+    height:500px;
+    position:relative;
+    top:-300px;
+    padding-top:30px;
+    left:18%;
+    background-color: #f7af45;
+}
+.input-head{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.inps{
+    background-color: white;
+    border:none;
+    border-radius: 5px;
+    height:30px;
+    /* margin-top:20px; */
+    padding-left:10px;
+}
+.modify-btn{
+    height:60px;
+    margin-top:30px;
+    width:50%;
+    border:none;
+    border-radius: 16px;
+    opacity:1;
+    background-color: white;
+    color:rgb(255, 149, 0);
+    font-size: 20px;
+    font-weight: 700;
+}
+.modify-btn:hover{
+    cursor: pointer;
+    background-color: rgb(255, 246, 227);
+}

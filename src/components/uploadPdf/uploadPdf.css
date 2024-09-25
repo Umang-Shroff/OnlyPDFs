@@ -1,0 +1,50 @@
+.topdiv{
+    position:relative;
+    top:50px;
+    height:200vh;
+}
+.upload-space{
+    opacity:0.85;
+    border-radius:16px;
+    padding:10px;
+    text-align:center;
+    width:400px;
+    height:160px;
+    position:relative;
+    left:35%;
+    background-color: #f7af45;
+
+}
+.upload-head{
+    position:relative;
+}
+.upload-inp{
+    position:relative;
+    padding-top:20px;
+    left:5%;
+}
+.upload-inp::file-selector-button{
+    background-color: white;
+    color:rgb(255, 140, 0);
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 5px;
+    height:40px;
+    padding-left:20px;
+    padding-right:20px;
+    border:none;
+}
+.upload-inp::file-selector-button:hover{
+    background-color: rgb(255, 246, 227);
+    cursor:pointer;
+}
+.middiv{
+    border:3px solid #f7af45;
+    width:70vw;
+    position:relative;
+    left:15%;
+    top:25px;
+    padding-bottom: 50px;
+    border-radius: 25px;
+    background-color: rgba(255,255,255,1);
+}
