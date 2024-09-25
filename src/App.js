@@ -23,8 +23,8 @@ const App = () => {
       {/* Component Rendering */}
       <div style={{ marginTop: '20px' }}>
         {activeComponent === 'A' && <PdfUploader onPdfUpload={setPdfBytes}/> }
-        {/* && pdfBytes && <ModifyPdf pdfBytes={pdfBytes}/>} */}
-        {pdfBytes && <ModifyPdf pdfBytes={pdfBytes} />}
+        {activeComponent === 'A' && pdfBytes && <ModifyPdf pdfBytes={pdfBytes}/>}
+        {/* {pdfBytes && <ModifyPdf pdfBytes={pdfBytes} />} */}
         {activeComponent === 'B' && <ImageToPdfUploader/>}
       </div>
     </div>
