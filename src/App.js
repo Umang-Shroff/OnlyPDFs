@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div>
       {/* Navbar */}
-      <nav style={{ position: 'sticky', top: 0, backgroundColor: '#fff', paddingLeft: '0px',width:'100vw',height:'70px',zIndex:'100', boxShadow: '0 10px 15px rgba(0, 0, 0, 0.1)' }}>
+      <nav className="navv" style={{ position: 'sticky', top: 0, backgroundColor: '#fff', paddingLeft: '0px',width:'100vw',height:'70px',zIndex:'100', boxShadow: '0 10px 15px rgba(0, 0, 0, 0.1)' }}>
         <button className="nav-btn" onClick={() => handleComponentChange('A')}>Edit PDF</button>
         <button className="nav-btn" onClick={() => handleComponentChange('B')}>Image to PDF</button>
       </nav>
