@@ -1,4 +1,4 @@
-.topdiv{
+/* .topdiv{
     position:relative;
     top:50px;
     height:200vh;
@@ -47,4 +47,113 @@
     padding-bottom: 50px;
     border-radius: 25px;
     background-color: white;
+} */
+
+
+/* Top Level Div */
+.topdiv {
+    position: relative;
+    top: 80px;
+    height: 200vh; /* Adjust if needed */
+}
+
+/* Upload Space Styles */
+.upload-space {
+    opacity: 0.85;
+    border-radius: 16px;
+    padding: 10px;
+    text-align: center;
+    width: 80%; /* Changed to percentage for responsiveness */
+    max-width: 400px; /* Set max width */
+    height: auto; /* Changed to auto for responsiveness */
+    margin: 0 auto; /* Center horizontally */
+    background-color: #f7af45;
+}
+
+.upload-head {
+    position: relative;
+}
+
+.upload-inp {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom:10px;
+    left: 0; /* Centering adjustment */
+}
+
+/* File Selector Button Styles */
+.upload-inp::file-selector-button {
+    background-color: white;
+    color: rgb(255, 140, 0);
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 5px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+}
+
+.upload-inp::file-selector-button:hover {
+    background-color: rgb(255, 246, 227);
+    cursor: pointer;
+}
+
+/* Mid Div Styles */
+.middiv {
+    border: 3px solid #f7af45;
+    width: 90%; /* Changed to percentage for responsiveness */
+    max-width: 800px; /* Set max width */
+    margin: 25px auto; /* Center and add margin */
+    padding-bottom: 50px;
+    border-radius: 25px;
+    background-color: white;
+    overflow-x:scroll;
+    overflow-y: hidden;
+    position:relative;
+    top:50px;
+}
+
+
+/* Scrollbar Styles */
+::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar {
+    border-radius: 16px;
+    background-color: white;
+    width: 10px;
+    scrollbar-color: blue;
+    height:8px;
+  }
+  
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .upload-space {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 20px; /* Increase padding */
+    }
+
+    .middiv {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .upload-inp::file-selector-button {
+        font-size: small; /* Smaller font for smaller screens */
+        padding-left: 10px; /* Adjust padding */
+        padding-right: 10px; /* Adjust padding */
+    }
+
+    .upload-space {
+        height: auto; /* Let height adjust based on content */
+    }
+
+    .middiv {
+        padding-bottom: 20px; /* Reduce padding */
+    }
 }
