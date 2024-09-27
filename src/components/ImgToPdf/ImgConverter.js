@@ -103,7 +103,8 @@ function ImageUploader() {
         </div>
       </DndProvider>
       <input type="file" className="img-inp" multiple onChange={handleFileSelect} />
-      <button className="download-img-btn" onClick={downloadPDF}>Download PDF</button>
+      <div className="wrapper-div"><button className="download-img-btn" onClick={downloadPDF}>Download PDF</button></div>
+      
       <style jsx>{`
         .image-list {
           display: flex;
