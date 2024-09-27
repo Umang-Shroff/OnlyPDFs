@@ -2,19 +2,17 @@
   text-align: center;
   
 }
-.nav-btn{
-  /* border:2px solid black; */
+/* .nav-btn{
   border:none;
   background-color: white;
   color:rgb(255, 136, 0);
   font-size:20px;
   font-weight:700;
-  /* padding-left:29%; */
   padding-top:2%;
   position:relative;
   margin-left:28vw;
-}
-.nav-btn:hover{
+} */
+/* .nav-btn:hover{
   color:rgb(255, 175, 38);
   cursor:pointer;
 }
@@ -26,8 +24,8 @@
   background-color: white;
   width: 10px;
   scrollbar-color: orange;
-}
-body{
+} */
+/* body{
   overflow-y:scroll;
   scrollbar-color: orange;
   overflow-x:hidden;
@@ -36,8 +34,7 @@ body{
         background-size: 6em 6em;
         background-color: #ffffff;
         opacity: 1;
-  /* backdrop-filter: blur(10px); */
-}
+} */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -70,5 +67,89 @@ body{
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+/* Button Styles */
+.navv{
+  display:flex;
+  justify-content: space-around;
+}
+.nav-btn {
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  color: rgb(255, 136, 0);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px; /* Adjusted padding for better touch targets */
+  position: relative;
+  margin-left: 2vw; /* Change from 28vw for better responsiveness */
+  transition: color 0.3s ease;
+}
+
+.nav-btn:hover {
+  color: rgb(255, 163, 3);
+  cursor: pointer;
+  background-color: #fff0d6;
+  transition:0.3s;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  background-color: white;
+  width: 10px;
+  scrollbar-color: orange;
+}
+
+/* Body Styles */
+body {
+  overflow-y: scroll;
+  scrollbar-color: orange;
+  overflow-x: hidden;
+  position: relative;
+  background: radial-gradient(circle at bottom left, transparent 25%, rgba(227, 175, 70, 0.25) 25.5%, rgba(227, 175, 70, 0.25) 36%, transparent 37%, transparent 100%),
+              radial-gradient(circle at top right, transparent 34%, rgba(227, 174, 69, 0.25) 34.5%, rgba(227, 175, 70, 0.25) 45.5%, transparent 46%, transparent 100%);
+  background-size: 6em 6em;
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-btn {
+    margin-left: 0; /* Remove left margin for smaller screens */
+    width: 100vw; /* Make buttons full width */
+    padding: 15px; /* Increase padding for better touch area */
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  nav {
+    width:100%;
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: stretch; /* Stretch buttons to full width */
+    height: auto; /* Adjust height for better fit */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-btn {
+    width:100%;
+    font-size: 18px; /* Slightly smaller font size for small screens */
+    padding: 12px; /* Adjust padding for better fit */
+  }
+
+  body {
+    background-size: 5em 5em; /* Adjust background size for smaller screens */
   }
 }
