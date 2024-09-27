@@ -1,4 +1,4 @@
-.inp-div{
+/* .inp-div{
     opacity:0.85;
     border-radius:16px;
     padding:10px;
@@ -20,7 +20,6 @@
     border:none;
     border-radius: 5px;
     height:30px;
-    /* margin-top:20px; */
     padding-left:10px;
 }
 .modify-btn{
@@ -46,4 +45,119 @@
     border-radius: 10px;
     background-color: rgba(255, 0, 0, 0.384);
     color:black;
+} */
+
+
+/* Input Div Styles */
+.inp-div {
+    opacity: 0.85;
+    border-radius: 16px;
+    padding: 10px;
+    text-align: center;
+    width: 90%; /* Change to percentage for responsiveness */
+    max-width: 800px; /* Set maximum width */
+    height: auto; /* Change to auto for dynamic height */
+    position: relative;
+    top: -25vh;
+    padding-top: 30px;
+    margin: 0 auto; /* Center horizontally */
+    background-color: #f7af45;
+}
+
+/* Input Head Styles */
+.input-head {
+    font-size: 2rem; /* Use rem for responsive font size */
+    padding-bottom: 20px;
+}
+
+/* Input Styles */
+.inps {
+    background-color: rgb(255, 248, 234);
+    border:2px solid rgb(255, 81, 0);
+    /* border: none; */
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 10px;
+    margin-left: 20px;
+    width: calc(30% - 20px); /* Make input full width minus padding */
+    margin-top: 10px; /* Add margin for spacing */
+}
+
+/* Button Styles */
+.modify-btn {
+    height: 60px;
+    margin-top: 40px;
+    margin-bottom:40px;
+    width: 50%;
+    border: none;
+    border-radius: 16px;
+    opacity: 1;
+    background-color: white;
+    color: rgb(255, 128, 0);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.modify-btn:hover {
+    cursor: pointer;
+    background-color: rgb(255, 246, 227);
+}
+
+/* Span Note Styles */
+.span-note {
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(186, 0, 0);
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.384);
+    color: black;
+    margin-top: 10px; /* Add margin for spacing */
+}
+.download-btn{
+    height: 60px;
+    margin-top: 40px;
+    margin-bottom:40px;
+    width: 50%;
+    border: none;
+    border-radius: 16px;
+    opacity: 1;
+    background-color: white;
+    color: rgb(255, 128, 0);
+    font-size: 20px;
+    font-weight: 700;
+}
+.download-btn:hover {
+    cursor: pointer;
+    background-color: rgb(255, 246, 227);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .inp-div{
+        position:relative;
+        top:-105vh;
+
+    }
+    .input-head {
+        font-size: 1.5rem; /* Smaller font size for smaller screens */
+    }
+
+    .modify-btn {
+        width: 80%; /* Adjust button width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .input-head {
+        font-size: 1.2rem; /* Even smaller font size for very small screens */
+    }
+
+    .inps {
+        height: 28px; /* Adjust input height for smaller screens */
+    }
+
+    .modify-btn {
+        height: 50px; /* Adjust button height */
+        font-size: 18px; /* Smaller font for button */
+    }
 }
