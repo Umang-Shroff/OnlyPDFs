@@ -155,11 +155,7 @@ const ModifyPdf = ({ pdfBytes }) => {
     const modifiedPdfBytes = await pdfDoc.save();
     setModifiedPdfBytes(modifiedPdfBytes);
 
-    // Reset input fields
-    setTextChange('');
-    setXdist(0);
-    setYdist(0);
-    setFontChange(0);
+
   };
 
   const handleDownloadPdf = () => {
@@ -175,6 +171,11 @@ const ModifyPdf = ({ pdfBytes }) => {
       document.body.removeChild(link);
       URL.revokeObjectURL(urlBlob);
     }
+          // Reset input fields
+    setTextChange('');
+    setXdist(0);
+    setYdist(0);
+    setFontChange(0);
   };
 
   return (
