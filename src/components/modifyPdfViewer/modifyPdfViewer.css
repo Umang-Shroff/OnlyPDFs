@@ -21,7 +21,7 @@
 @media (max-width: 480px) {
     .upload-inp::file-selector-button {
         font-size: small; /* Smaller font for smaller screens */
-        padding-left: 10px; /* Adjust padding */
+/*         padding-left: 10px;  */
         padding-right: 10px; /* Adjust padding */
     }
 
